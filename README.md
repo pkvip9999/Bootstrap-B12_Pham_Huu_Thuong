@@ -21,4 +21,4 @@ Kết quả thực hành bài 4 5 6 phải được push lên 1 repo
 
 ## Liên kết
 - [tai lieu](https://www.youtube.com/playlist?list=PLUoqTnNH-2XyNhhLuYrrmrmV46jVw6RHF)
-- [link](https://pkvip9999.github.io/Bootstrap-B12_Pham-Huu-Thuong/dist/)
+- [link](https://pkvip9999.github.io/Bootstrap-B12_Pham_Huu_Thuong/dist/)
