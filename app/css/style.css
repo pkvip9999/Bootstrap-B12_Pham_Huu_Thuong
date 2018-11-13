@@ -4466,10 +4466,44 @@ a.text-dark:hover, a.text-dark:focus {
 .media-body {
   flex: 1; }
 
-html,
 body {
-  width: 100%;
-  height: 100%; }
+  padding-top: 78px; }
+
+.navbar {
+  position: fixed;
+  top: 0px;
+  z-index: 1080;
+  width: 100%; }
+
+@media (max-width: 1502.98px) {
+  .navbar-expand-my > .container,
+  .navbar-expand-my > .container-fluid {
+    padding-right: 0;
+    padding-left: 0; } }
+
+@media (min-width: 1503px) {
+  .navbar-expand-my {
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    width: 100%; }
+    .navbar-expand-my .navbar-nav {
+      flex-direction: row; }
+      .navbar-expand-my .navbar-nav .dropdown-menu {
+        position: absolute; }
+      .navbar-expand-my .navbar-nav .nav-link {
+        padding-right: 0.5rem;
+        padding-left: 0.5rem; }
+    .navbar-expand-my .nav-link {
+      padding-right: 0.5rem;
+      padding-left: 0.5rem; }
+    .navbar-expand-my .navbar-collapse {
+      display: flex !important;
+      flex-basis: auto; }
+    .navbar-expand-my .navbar-toggler {
+      display: none; }
+  .navbar-expand-my > .container,
+  .navbar-expand-my > .container-fluid {
+    flex-wrap: nowrap; } }
 
 .nav-scroller {
   height: 2.75rem;
@@ -4477,10 +4511,18 @@ body {
   padding-bottom: 1rem;
   margin-top: -1px; }
   .nav-scroller .nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
+    padding-bottom: 1rem;
+    margin-top: -1px;
+    overflow-x: auto;
+    color: rgba(255, 255, 255, 0.75);
     text-align: center;
-    white-space: nowrap; }
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch; }
 
 .nav-underline .nav-link {
   padding-top: .75rem;

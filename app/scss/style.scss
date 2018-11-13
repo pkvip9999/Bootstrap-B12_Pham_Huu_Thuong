@@ -1,23 +1,72 @@
 @import "bootstrap";
 
-
-html,
 body {
-  @include size(100%);
+  padding-top: 78px;
 }
-.nav-scroller{
+.navbar{
+  position: fixed;
+  top: 0px;
+  z-index: 1080;
+  width: 100%;
+}
+@media (max-width: 1502.98px) {
+  .navbar-expand-my > .container,
+  .navbar-expand-my > .container-fluid {
+    padding-right: 0;
+    padding-left: 0; } }
 
+@media (min-width: 1503px) {
+  .navbar-expand-my {
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    width: 100%;
+    .navbar-nav {
+      flex-direction: row;
+      .dropdown-menu {
+        position: absolute;
+      }
+      .nav-link {
+        padding-right: 0.5rem;
+        padding-left: 0.5rem;
+      }
+    }
+    .nav-link {
+      padding-right: 0.5rem;
+      padding-left: 0.5rem;
+    }
+    .navbar-collapse {
+      display: flex !important;
+      flex-basis: auto;
+    }
+    .navbar-toggler {
+      display: none;
+    }
+  }
+
+  .navbar-expand-my > .container,
+  .navbar-expand-my > .container-fluid {
+    flex-wrap: nowrap;
+  }
+}
+.nav-scroller {
   height: 2.75rem;
   flex-wrap: nowrap;
   padding-bottom: 1rem;
   margin-top: -1px;
   .nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
+    padding-bottom: 1rem;
+    margin-top: -1px;
+    overflow-x: auto;
+    color: rgba(255, 255, 255, .75);
     text-align: center;
     white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
   }
-
 }
 
 .nav-underline {
@@ -35,12 +84,12 @@ body {
     color: var(--gray-dark);
   }
 }
-.bg-purple{
+.bg-purple {
   background: #6f42c1;
 }
-.lh-100{
+.lh-100 {
   line-height: 1;
 }
-.lh-125{
+.lh-125 {
   line-height: 1.25;
 }
